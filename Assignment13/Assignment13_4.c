@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int sum_numbers(int no)
+{
+    int iCnt = 0, iSum = 0;
+    for(iCnt = 1; iCnt <= no ; iCnt++)
+    {
+        iSum = iSum + iCnt;   
+    }
+    return iSum;
+}
+//time complexity = O(n)
+int main()
+{
+    int limit = 0, ret = 0;
+
+    printf("ENter the limit : \n");
+    scanf("%d",&limit);
+
+    ret = sum_numbers(limit);
+    printf("the sum of n numbers is : %d",ret);
+
+
+    return 0;
+}
